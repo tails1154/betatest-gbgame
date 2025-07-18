@@ -42,7 +42,7 @@ function loadViaMozActivity () {
 
 function loadViaXHR () {
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "insert_relative_path_to_gb_rom_here");
+  xhr.open("GET", "https://tails1154.github.io/betatest-gbgame/game.gb");
   xhr.responseType = "blob";
   xhr.onload = function () {
     startGame(new Blob([this.response], { type: "text/plain" }));
